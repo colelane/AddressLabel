@@ -1,4 +1,9 @@
-﻿Public Class AddressLabelForm
+﻿'Lane Coleman
+'RCET 0265
+'Fall 2020
+'Address Label Generator
+'https://github.com/colelane/AddressLabel.git
+Public Class AddressLabelForm
     Private Sub ExitButton_Click(sender As Object, e As EventArgs) Handles ExitButton.Click
         Me.Close()
     End Sub
