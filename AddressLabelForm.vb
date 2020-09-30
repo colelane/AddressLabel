@@ -22,4 +22,6 @@
     Private Sub ClearButton_Click(sender As Object, e As EventArgs) Handles ClearButton.Click
         DisplayLabel.Text = Nothing
     End Sub
+
+
 End Class

@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class AddressLabelForm
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,8 +20,9 @@ Partial Class AddressLabelForm
     'NOTE: The following procedure is required by the Windows Form Designer
     'It can be modified using the Windows Form Designer.  
     'Do not modify it using the code editor.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
+        Me.components = New System.ComponentModel.Container()
         Me.DisplayButton = New System.Windows.Forms.Button()
         Me.ClearButton = New System.Windows.Forms.Button()
         Me.ExitButton = New System.Windows.Forms.Button()
@@ -40,6 +41,7 @@ Partial Class AddressLabelForm
         Me.DisplayLabel = New System.Windows.Forms.Label()
         Me.InputGroupBox = New System.Windows.Forms.GroupBox()
         Me.OutputGroupBox = New System.Windows.Forms.GroupBox()
+        Me.ToolTip = New System.Windows.Forms.ToolTip(Me.components)
         Me.InputGroupBox.SuspendLayout()
         Me.OutputGroupBox.SuspendLayout()
         Me.SuspendLayout()
@@ -51,6 +53,7 @@ Partial Class AddressLabelForm
         Me.DisplayButton.Size = New System.Drawing.Size(233, 102)
         Me.DisplayButton.TabIndex = 0
         Me.DisplayButton.Text = "Display"
+        Me.ToolTip.SetToolTip(Me.DisplayButton, "Displays the information in the textbox as a label")
         Me.DisplayButton.UseVisualStyleBackColor = True
         '
         'ClearButton
@@ -60,6 +63,7 @@ Partial Class AddressLabelForm
         Me.ClearButton.Size = New System.Drawing.Size(233, 102)
         Me.ClearButton.TabIndex = 1
         Me.ClearButton.Text = "Clear"
+        Me.ToolTip.SetToolTip(Me.ClearButton, "Clears the Address Label")
         Me.ClearButton.UseVisualStyleBackColor = True
         '
         'ExitButton
@@ -69,6 +73,7 @@ Partial Class AddressLabelForm
         Me.ExitButton.Size = New System.Drawing.Size(233, 102)
         Me.ExitButton.TabIndex = 2
         Me.ExitButton.Text = "Exit"
+        Me.ToolTip.SetToolTip(Me.ExitButton, "Exit program")
         Me.ExitButton.UseVisualStyleBackColor = True
         '
         'FirstNameTextBox
@@ -77,6 +82,7 @@ Partial Class AddressLabelForm
         Me.FirstNameTextBox.Name = "FirstNameTextBox"
         Me.FirstNameTextBox.Size = New System.Drawing.Size(472, 31)
         Me.FirstNameTextBox.TabIndex = 3
+        Me.ToolTip.SetToolTip(Me.FirstNameTextBox, "Your First Name Here")
         '
         'LastNameTextBox
         '
@@ -84,6 +90,7 @@ Partial Class AddressLabelForm
         Me.LastNameTextBox.Name = "LastNameTextBox"
         Me.LastNameTextBox.Size = New System.Drawing.Size(472, 31)
         Me.LastNameTextBox.TabIndex = 4
+        Me.ToolTip.SetToolTip(Me.LastNameTextBox, "Your Last Name Here")
         '
         'StreetAddressTextBox
         '
@@ -91,6 +98,7 @@ Partial Class AddressLabelForm
         Me.StreetAddressTextBox.Name = "StreetAddressTextBox"
         Me.StreetAddressTextBox.Size = New System.Drawing.Size(472, 31)
         Me.StreetAddressTextBox.TabIndex = 5
+        Me.ToolTip.SetToolTip(Me.StreetAddressTextBox, "Your Street Address Here")
         '
         'ZipTextBox
         '
@@ -98,6 +106,7 @@ Partial Class AddressLabelForm
         Me.ZipTextBox.Name = "ZipTextBox"
         Me.ZipTextBox.Size = New System.Drawing.Size(233, 31)
         Me.ZipTextBox.TabIndex = 8
+        Me.ToolTip.SetToolTip(Me.ZipTextBox, "Your Zip Code Here")
         '
         'StateTextBox
         '
@@ -105,6 +114,7 @@ Partial Class AddressLabelForm
         Me.StateTextBox.Name = "StateTextBox"
         Me.StateTextBox.Size = New System.Drawing.Size(233, 31)
         Me.StateTextBox.TabIndex = 7
+        Me.ToolTip.SetToolTip(Me.StateTextBox, "Your State of Residency Here")
         '
         'CityTextBox
         '
@@ -112,6 +122,7 @@ Partial Class AddressLabelForm
         Me.CityTextBox.Name = "CityTextBox"
         Me.CityTextBox.Size = New System.Drawing.Size(472, 31)
         Me.CityTextBox.TabIndex = 6
+        Me.ToolTip.SetToolTip(Me.CityTextBox, "Your City of Residency Here")
         '
         'FirstNameLabel
         '
@@ -205,6 +216,7 @@ Partial Class AddressLabelForm
         Me.OutputGroupBox.TabIndex = 17
         Me.OutputGroupBox.TabStop = False
         Me.OutputGroupBox.Text = "Address Label"
+        Me.ToolTip.SetToolTip(Me.OutputGroupBox, "Display area for address label")
         '
         'AddressLabelForm
         '
@@ -244,4 +256,5 @@ Partial Class AddressLabelForm
     Friend WithEvents DisplayLabel As Label
     Friend WithEvents InputGroupBox As GroupBox
     Friend WithEvents OutputGroupBox As GroupBox
+    Friend WithEvents ToolTip As ToolTip
 End Class
