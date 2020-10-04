@@ -52,7 +52,7 @@ Partial Class AddressLabelForm
         Me.DisplayButton.Name = "DisplayButton"
         Me.DisplayButton.Size = New System.Drawing.Size(233, 102)
         Me.DisplayButton.TabIndex = 0
-        Me.DisplayButton.Text = "Display"
+        Me.DisplayButton.Text = "&Display"
         Me.ToolTip.SetToolTip(Me.DisplayButton, "Displays the information in the textbox as a label")
         Me.DisplayButton.UseVisualStyleBackColor = True
         '
@@ -62,17 +62,18 @@ Partial Class AddressLabelForm
         Me.ClearButton.Name = "ClearButton"
         Me.ClearButton.Size = New System.Drawing.Size(233, 102)
         Me.ClearButton.TabIndex = 1
-        Me.ClearButton.Text = "Clear"
+        Me.ClearButton.Text = "&Clear"
         Me.ToolTip.SetToolTip(Me.ClearButton, "Clears the Address Label")
         Me.ClearButton.UseVisualStyleBackColor = True
         '
         'ExitButton
         '
+        Me.ExitButton.DialogResult = System.Windows.Forms.DialogResult.Cancel
         Me.ExitButton.Location = New System.Drawing.Point(1034, 723)
         Me.ExitButton.Name = "ExitButton"
         Me.ExitButton.Size = New System.Drawing.Size(233, 102)
         Me.ExitButton.TabIndex = 2
-        Me.ExitButton.Text = "Exit"
+        Me.ExitButton.Text = "E&xit"
         Me.ToolTip.SetToolTip(Me.ExitButton, "Exit program")
         Me.ExitButton.UseVisualStyleBackColor = True
         '
@@ -220,8 +221,10 @@ Partial Class AddressLabelForm
         '
         'AddressLabelForm
         '
+        Me.AcceptButton = Me.DisplayButton
         Me.AutoScaleDimensions = New System.Drawing.SizeF(12.0!, 25.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.CancelButton = Me.ExitButton
         Me.ClientSize = New System.Drawing.Size(1298, 883)
         Me.Controls.Add(Me.OutputGroupBox)
         Me.Controls.Add(Me.InputGroupBox)
