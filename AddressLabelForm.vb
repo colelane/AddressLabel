@@ -15,6 +15,7 @@ Public Class AddressLabelForm
             StreetAddressTextBox.Text = Nothing Or CityTextBox.Text = Nothing _
             Or StateTextBox.Text = Nothing Or ZipTextBox.Text = Nothing Then
             MsgBox("Please fill out all fields.")
+            'Set focus to the first empty text box in the tab order here - TJR
             Exit Sub
         End If
 
